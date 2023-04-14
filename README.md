@@ -19,8 +19,8 @@ https://github.com/microsoft/Table-Pretraining
 https://github.com/naver/sqlova
 
 # 開發Flow
-1. speech to text
-2. train bert by wikisql
-3. train bert by cspider and pxgo data base on 2.'s model
-4. implement a web interface
-5. combine 1. & 3. into 4.
+1. speech to text (done...)
+2. train bert by wikisql (surveying)
+3. fine tune bert by cspider and pxgo data base on 2.'s model(cspider and pxgo data ready)
+4. implement a web interface(not necessary)
+5. combine 1. & 3. into 4.(not necessary)
