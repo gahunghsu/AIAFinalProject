@@ -2,7 +2,8 @@
 AIA 期末專題
 
 # 資料
-1. TableQA
+1. TableQA (https://github.com/ZhuiyiTechnology/TableQA)
+```
 @misc{sun2020tableqa,
     title={TableQA: a Large-Scale Chinese Text-to-SQL Dataset for Table-Aware SQL Generation},
     author={Ningyuan Sun and Xuefeng Yang and Yunfeng Liu},
@@ -11,6 +12,7 @@ AIA 期末專題
     archivePrefix={arXiv},
     primaryClass={cs.DB}
 }
+```
 2. wikisql
 
 # 相關專案
