@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>智能客服</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+        .fas.fa-microphone-recording:before {
+            content: "\f2a4"; /* 調整圖示內容為錄音圖示 */
+            color: red; /* 可以加上顏色變化 */
+        }
+    </style>
+</head>
+<body>
+	<div class="chat-container">
+		<div class="chat-header">
+			<div class="header-info">
+				<div class="chat-title">智能客服</div>
+				<div class="chat-status">線上</div>
+			</div>
+			<div class="header-actions">
+				<a href="#">Settings</a>
+			</div>
+		</div>
+		<div class="chat-history">
+			<div class="message message-received">
+				<div class="message-sender-avatar">
+					<img src="{{ url_for('static', filename='img/customer-service.png') }}">
+				</div>
+				<div class="message-content">
+					<div class="message-info">
+						<div class="message-sender">客服</div>
+						<div class="message-time">10:30 AM</div>
+					</div>
+					<div class="message-body">請問有什麼可以協助您?</div>
+				</div>
+			</div>
+			<!-- <div class="message message-sent">
+				<div class="message-sender-avatar">
+					<img src="{{ url_for('static', filename='img/thug.png') }}">
+				</div>
+					<div class="message-content">
+					<div class="message-info">
+						<div class="message-sender">Sarah</div>
+						<div class="message-time">10:35 AM</div>
+					</div>
+					<div class="message-body">Not much, you?</div>
+				</div>
+			</div> -->
+		</div>
+		<div class="chat-input">
+			<form>
+				<input type="text" id="text-input" placeholder="Type a message...">
+				<button id="send-button"><i class="fas fa-paper-plane"></i></button>
+                <button id="voice-button"><i class="fas fa-microphone"></i></button>
+			</form>
+			
+			<p id="status"></p>
+			<audio id="gum" autoplay></audio>
+		</div>
+	</div>
+    <script src="{{ url_for('static', filename='js/speech.js') }}"></script>
+</body>
+</html>
