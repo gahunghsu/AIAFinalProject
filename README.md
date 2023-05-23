@@ -15,16 +15,19 @@ AIA 期末專題
 ```
 2. wikisql
 
-# 相關專案
-1. 目前以 wikiSQL training, 且testing最高分的專案
-https://github.com/microsoft/Table-Pretraining
-
+# 使用Model
+1. https://github.com/ymcui/Chinese-BERT-wwm
+```
+@journal{cui-etal-2021-pretrain,
+  title={Pre-Training with Whole Word Masking for Chinese BERT},
+  author={Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin, Bing and Yang, Ziqing},
+  journal={IEEE Transactions on Audio, Speech and Language Processing},
+  year={2021},
+  url={https://ieeexplore.ieee.org/document/9599397},
+  doi={10.1109/TASLP.2021.3124365},
+ }
+```
 2. bert + wikisql
 https://github.com/naver/sqlova
 
-# 開發Flow
-1. speech to text (done...)
-2. train bert by wikisql (surveying)
-3. fine tune bert by cspider and pxgo data base on 2.'s model(cspider and pxgo data ready)
-4. implement a web interface(not necessary)
-5. combine 1. & 3. into 4.(not necessary)
+3. openai - babbage
